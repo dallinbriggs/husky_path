@@ -44,3 +44,15 @@ add_executable(husky_path_manager
 target_link_libraries(husky_path_manager
         ${catkin_LIBRARIES}
 )
+
+add_executable(husky_publish_test
+        src/publish_test.cpp
+)
+
+#add_dependencies(husky_path_manager
+#        husky_generate_messages_cpp
+#)
+
+target_link_libraries(husky_publish_test
+        ${catkin_LIBRARIES}
+)
